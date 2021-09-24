@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json())
 
 app.get('/', (req, res)=> {
-res.send('Hello Afrith');
+res.send('Hello _MY_ENV_VAR');
 });
 
 app.post('/getIndexes', (req, res)=> {
