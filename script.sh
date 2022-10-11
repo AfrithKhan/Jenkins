@@ -5,6 +5,6 @@ ssh ubuntu@172.31.0.68 <<EOF
     docker build -t nodejs:$1 .
     docker stop nodejs
     docker stop nodejs || true && docker rm -f nodejs || true
-    docker run -d -p 3000:3000 --name nodejs:$1
+    docker run -d -p 3000:3000 --name nodejs nodejs:$1
     exit
 EOF
