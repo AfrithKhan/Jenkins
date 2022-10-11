@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh root@172.31.9.147
+ssh -tt root@172.31.9.147
 cd /home/ubuntu/Nodejs/Jenkins
 git pull origin master
 npm install
