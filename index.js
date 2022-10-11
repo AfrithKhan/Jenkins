@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json())
 
 app.get('/', (req, res)=> {
-res.send('Hello Afrith changed by docker');
+res.send('Hello Afrith changed by docker now');
 });
 
 app.post('/getIndexes', (req, res)=> {
