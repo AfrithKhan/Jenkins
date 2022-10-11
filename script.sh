@@ -4,6 +4,6 @@ ssh ubuntu@172.31.0.68 <<EOF
     git pull origin master
     npm install
     npm install -g nodemon pm2
-    pm2 restart ecosystem.config.js
+    pm2 restart index.js
     exit
 EOF
