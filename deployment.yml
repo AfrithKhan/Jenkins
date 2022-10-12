@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs
+spec:
+  selector:
+    matchLabels:
+      app: nodejs
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: nodejs
+    spec:
+      containers:
+      - name: nodejs
+        image: 131333373690.dkr.ecr.ap-southeast-1.amazonaws.com/nodejs:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
